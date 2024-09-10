@@ -1,0 +1,21 @@
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libjansson-dev \
+    libgmp-dev \
+    automake \
+    git
+
+WORKDIR /app
+
+RUN git clone https://github.com/monkins1010/ccminer.git && \
+    cd ccminer && \
+    ./build.sh
+
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+
+CMD ["/app/start.sh"]

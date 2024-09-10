@@ -1,0 +1,4 @@
+POOL_URL="stratum+tcp://pool.verus.io:9999"
+WALLET_ADDRESS="your-wallet-address.name"
+PASSWORD="x"
+THREADS="8"
