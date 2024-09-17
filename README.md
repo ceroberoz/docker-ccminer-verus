@@ -11,7 +11,7 @@ This repository contains a Dockerized setup for running ccminer to mine Verus Co
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/docker-ccminer-verus.git
+   git clone https://github.com/ceroberoz/docker-ccminer-verus.git
    cd docker-ccminer-verus
    ```
 
